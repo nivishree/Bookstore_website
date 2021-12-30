@@ -1,0 +1,69 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection) or
+# paste cURL into the file and request will be converted to HTTP Request format.
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+GET http://localhost:8080/NivishreeBookstoreOrder/api/categories
+Accept: application/json
+
+###
+
+# curl 'http://localhost:8080/NivishreeBookstoreOrder/api/orders' -X POST -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Referer: http://localhost:8081/' -H 'Content-Type: application/json' -H 'Origin: http://localhost:8081' -H 'Connection: keep-alive' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: cross-site' --data-raw '{"cart":{"items":[{"book":{"bookId":1012,"title":"The Nightingale","author":"Kristen Hannah","description":"","price":1399,"rating":2,"isPublic":true,"isFeatured":true,"categoryId":1003},"quantity":1}]},"customerForm":{"name":"nivishreepan","address":"asdfsdafsadfwefcsda","phone":"4085332341","email":"nivipal10@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2021}}'
+# curl 'http://localhost:8080/NivishreeBookstoreOrder/api/orders' -X POST -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Referer: http://localhost:8081/' -H 'Content-Type: application/json' -H 'Origin: http://localhost:8081' -H 'Connection: keep-alive' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: cross-site' --data-raw '{"cart":{"items":[{"book":{"bookId":1012,"title":"The Nightingale","author":"Kristen Hannah","description":"","price":1399,"rating":2,"isPublic":true,"isFeatured":true,"categoryId":1003},"quantity":1}]},"customerForm":{"name":"nivi","address":"platation road","phone":"5404497556","email":"nivipal10@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":11,"ccExpiryYear":2021}}'
+###
+
+# curl 'http://localhost:8080/NivishreeBookstoreOrder/api/orders' -X POST -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0' -H 'Accept: */*' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Referer: http://localhost:8080/NivishreeBookstoreOrder/checkout' -H 'Content-Type: application/json' -H 'Origin: http://localhost:8080' -H 'Connection: keep-alive' -H 'Cookie: JSESSIONID=F46AFF6692D9105E6FCA7DCFE0D841AA' -H 'Sec-Fetch-Dest: empty' -H 'Sec-Fetch-Mode: cors' -H 'Sec-Fetch-Site: same-origin' --data-raw '{"cart":{"items":[{"book":{"bookId":1011,"title":"The Magician","author":"Colm Toibin","description":"","price":1199,"rating":5,"isPublic":true,"isFeatured":false,"categoryId":1003},"quantity":1}]},"customerForm":{"name":"nivi","address":"plantation road","phone":"540-449-7556","email":"nivipal10@gmail.com","ccNumber":"4444333322221111","ccExpiryMonth":7,"ccExpiryYear":2021}}'
+POST http://localhost:8080/NivishreeBookstoreOrder/api/orders
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Referer: http://localhost:8080/NivishreeBookstoreOrder/checkout
+Origin: http://localhost:8080
+Connection: keep-alive
+Cookie: JSESSIONID=F46AFF6692D9105E6FCA7DCFE0D841AA
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Content-Type: application/json
+
+{
+  "cart": {
+    "items": [
+      {
+        "book": {
+          "bookId": 1011,
+          "title": "The Magician",
+          "author": "Colm Toibin",
+          "description": "",
+          "price": 1199,
+          "rating": 5,
+          "isPublic": true,
+          "isFeatured": false,
+          "categoryId": 1003
+        },
+        "quantity": 1
+      }
+    ]
+  },
+  "customerForm": {
+    "name": "nivi",
+    "address": "plantatiopn",
+    "phone": "540-449-7556",
+    "email": "nivipal10@gmail.com",
+    "ccNumber": "4444333322221111",
+    "ccExpiryMonth": 11,
+    "ccExpiryYear": 2020
+  }
+}
+
+###
+
+
+###
+
+
+###
+

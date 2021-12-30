@@ -1,0 +1,3 @@
+rootProject.name = 'NivishreeBookstoreTransact'
+include 'server'
+

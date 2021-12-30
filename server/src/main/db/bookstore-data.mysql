@@ -1,0 +1,41 @@
+DELETE FROM book;
+ALTER TABLE book AUTO_INCREMENT = 1001;
+
+DELETE FROM category;
+ALTER TABLE category AUTO_INCREMENT = 1001;
+
+INSERT INTO `category` (`name`) VALUES ('Blossoms Exclusive'),('New Releases'),('Coming Soon'),('Signed Editions'),('Audio Books'),('Ebooks');
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Lost Symbol', 'Dan Brown', '', 1199, 4, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('American Psycho', 'Bret Eston Ellisi', '', 1999, 4, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('In Five Years', 'Rebbeca Serle', '', 1599, 3, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Billys Summer', 'Stephen King', '', 1699, 4, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Harry Potter', 'J K Rowling', '', 1399, 3, TRUE, FALSE, 1001);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The secret of chimneys', 'Agatha christe', '', 1675, 5, TRUE, FALSE, 1001);
+
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Darkest Frost', 'Tanya Holmes', '', 1299, 5, TRUE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Wallbanger', 'Alice Clayton', '', 999, 2, TRUE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Jules', 'Ellie Penn', '', 1099, 3, TRUE, FALSE, 1002);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('The Approach', 'AR Von', '', 1285, 4, TRUE, FALSE, 1002);
+
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Arthur Miller', 'Martin Gottfried', '', 1199, 5, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Beautiful Shadow', 'Andrew Wilson', '', 1399, 2, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Bradbury Chronicles', 'Sam Weller', '', 1899, 3, TRUE, FALSE, 1003);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Cheever', 'Blake Bailey', '', 1234, 4, TRUE, FALSE, 1003);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Arthur Miller', 'Martin Gottfried', '', 1199, 4, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Beautiful Shadow', 'Andrew Wilson', '', 1399, 1, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Bradbury Chronicles', 'Sam Weller', '', 1899, 4, TRUE, FALSE, 1004);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Cheever', 'Blake Bailey', '', 1234, 2, TRUE, FALSE, 1004);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Yes Please', 'Amy Poehler', '', 1199, 5, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Bossypants', 'Tina Fey', '', 1399, 2, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Neverwhere', 'Neil Gaiman', '', 1899, 3, TRUE, FALSE, 1005);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Why Not Me?', 'Mindy Kaling', '', 1234, 4, TRUE, FALSE, 1005);
+
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Yes Please', 'Amy Poehler', '', 1199, 5, TRUE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Bossypants', 'Tina Fey', '', 1399, 2, TRUE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Neverwhere', 'Neil Gaiman', '', 1899, 3, TRUE, FALSE, 1006);
+INSERT INTO `book` (title, author, description, price, rating, is_public, is_featured, category_id) VALUES ('Why Not Me?', 'Mindy Kaling', '', 1234, 4, TRUE, FALSE, 1006);
